@@ -7,7 +7,7 @@ yerror=np.array([0.05,0.05,0.05,0.05,0.05])
 #the next line is the model prediction,
 #where we make some initial guess
 #what the slope of the line will be
-fx=0.06*x-0.1
+fx=0.05*x
 plt.errorbar(x,y,yerror,fmt='bo')
 plt.plot(x,fx,'r-')
 plt.show()
