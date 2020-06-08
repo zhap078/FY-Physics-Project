@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 
 f=open("Galaxy1.txt","r")
 f.readline()
+g=open("Galaxy2.txt","r")
+g.readline()
 
 Radius=[]
 dR=[]
@@ -11,10 +13,6 @@ dV=[]
 Mass=[]
 G=4.3*(10**-6)
 predictV=[]
-
-g=open("Galaxy2.txt","r")
-g.readline()
-
 Radius2=[]
 dR2=[]
 Velocity2=[]
