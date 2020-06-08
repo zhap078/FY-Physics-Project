@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-f=open("Galaxy1.txt","r")
+f=open("Galaxy2.txt","r")
 f.readline()
 Radius=[]
 dR=[]
