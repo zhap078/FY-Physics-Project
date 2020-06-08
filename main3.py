@@ -14,17 +14,18 @@ predictV=[]
 p=100*(10**6)
 r=1.87
 MassDM=[]
+MaddDM=[]
 
 for line in f:
   Mass.append(float(line.split("\t")[4]))
   MassDM.append(4*math.pi*p*(r**2)*((float(line.split("\t")[0]))-(r*math.atan((float(line.split("\t")[0]))/r))))
-  predictV.append(((float(G))*(float(line.split("\t")[4]))/(float(line.split("\t")[0])))**(0.5))
+  MaddDM.append((float(line.split("\t")[4]))+(4*math.pi*p*(r**2)*((float(line.split("\t")[0]))-(r*math.atan((float(line.split("\t")[0]))/r)))))
 
 x=np.array(Mass)
-z=np.array(MassDM)
-y=np.array(predictV)
+y=np.array(MassDM)
+z=np.array(MaddDM)
 plt.plot(x,y)
-plt.plot(z,y)
+plt.plot(x,z)
 plt.xlabel('Mass (Solar Masses)')
-plt.ylabel('Predicted Velocity (km/s)')
+plt.ylabel('Dark Matter (Solar Masses)')
 plt.show()
