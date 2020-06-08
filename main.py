@@ -18,12 +18,12 @@ for line in f:
    dV.append(float(line.split("\t")[3]))
    Mass.append(float(line.split("\t")[4]))
    predictV.append(((float(G))*(float(line.split("\t")[4]))/(float(line.split("\t")[0])))**(0.5))
-   
+
 x=np.array(Radius)
 y=np.array(Velocity)
 z=np.array(predictV)
 plt.plot(x,y, label="Measured Velocity")
-plt.plot(x,z, label="Predicted Velocity")
+plt.plot(x,z, label-"Predicted Velocity")
 plt.xlabel('Radius (km/h)')
 plt.ylabel('Velocity (kpc)')
 plt.legend()
