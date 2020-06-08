@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 
-f=open("Galaxy1.txt","r")
+f=open("Galaxy2.txt","r")
 f.readline()
 Radius=[]
 dR=[]
@@ -23,7 +23,7 @@ for line in f:
 
 x=np.array(Mass)
 y=np.array(MassDM)
-z=np.array(MaddDM)
+z=np.array(MaddDN)
 plt.plot(x,y)
 plt.plot(x,z)
 plt.xlabel('Mass (Solar Masses)')
